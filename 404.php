@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <h4 class="page-title">404 not found</h4>
+                <h4 class="page-title"><?php _e('404 not found')?></h4>
             </div>
         </div>
     </div>
@@ -13,8 +13,7 @@
         <div class="row">
             <div class="col-xl-8">
                 <div class="page-404-content">
-                    <h4>Sorry! Not Found</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                    <h4><?php _e('Sorry! Not Found')?></h4>
                 </div>
             </div>
             <div class="col-xl-4">

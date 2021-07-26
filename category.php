@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="breadcumb">
-                    <h4>Blog</h4>
+                    <h4><?php the_archive_title();?></h4>
                     <ul>
                         <li><a href="<?php echo site_url();?>"></a>Home</li> /
                         <li>Blog</li>
@@ -19,9 +19,8 @@
     <div class="container">
         <div class="row">
             <?php
-                while( have_posts()){
-                 the_post();
-
+                while(have_posts()){
+                    the_post();
             ?>
             <div class="col-md-4">
                 <div class="single-blog">
@@ -46,10 +45,7 @@
 
             <?php
                 }
-                
             wp_reset_postdata();
-
-            
             ?>
         </div>
 
@@ -58,7 +54,8 @@
             <div class="col-xl-12">
                 <div class="pagination">
                     <?php
-                     the_posts_pagination( );
+                     next_posts_link(); 
+                    previous_posts_link();
                     ?>
                 </div>
             </div>

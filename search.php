@@ -18,26 +18,27 @@
             <div class="col-xl-8">
                 <div class="row">
                     <?php 
-                    if(have_posts()){
-                    while(have_posts()){
-                        the_post();
+                        if(have_posts()){
+                        while(have_posts()){
+                            the_post();
                     ?>
                     <div class="col-md-6">
                         <div class="single-blog">
                             <?php the_post_thumbnail();?>
                             <div class="post-content">
                                 <div class="post-title">
-                                <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+                                    <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
                                 </div>
                                 <div class="pots-meta">
-                                <ul>
-                                    <li><?php the_category(', ');?></li> 
-                                    <li><a href="#"><?php echo get_the_date();?></a></li>
-                                    <li><a href="#"><?php echo get_the_author();?></a></li>
-                                </ul>
+                                    <ul>
+                                        <li><?php the_category(', ');?></li>
+                                        <li><a href="#"><?php echo get_the_date();?></a></li>
+                                        <li><a href="#"><?php echo get_the_author();?></a></li>
+                                    </ul>
                                 </div>
                                 <?php the_excerpt();?>
-                                <a href="<?php the_permalink();?>" class="box-btn">read more <i class="fa fa-angle-double-right"></i></a>
+                                <a href="<?php the_permalink();?>" class="box-btn">read more <i
+                                        class="fa fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
