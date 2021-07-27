@@ -18,3 +18,6 @@ require_once get_template_directory().'/inc/custom-widgets.php';
 
 //Theme options
 require_once get_template_directory().'/inc/theme-options.php';
+
+//Theme activation with TGM
+require_once get_template_directory().'/halim-tgm/halim-activation.php';
